@@ -1,0 +1,20 @@
+/* solution.css */
+
+/* Fix 1: Using !important (use sparingly!) */
+.container {
+  background-color: lightblue !important;
+}
+
+/* Fix 2: Increasing specificity */
+#myElement .container {
+  background-color: lightgreen;
+}
+
+/* Fix 3: Using more specific selectors */
+.container.special {
+    background-color: lightcoral;
+}
+
+/* Correct way of handling specificity: 
+   - Try to add more specific selectors
+   - Avoid !important as much as possible */ 
